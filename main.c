@@ -1,13 +1,7 @@
-# FSM_Stepper
- Using Moore finite state machine to operate a stepper motor in 3 step modes.
-
-#### Example (main.c)
-```
 #include <fsm_stepper.h>
 
 int main()
 {
-  //set PORTB,C,D outputs for driving 3 steppers
   DDRB = DDRC = DDRD = 0xFF;
   while (true)
   {
@@ -22,5 +16,3 @@ int main()
   }
   return 0;
 }
-
-```
